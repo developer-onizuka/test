@@ -36,3 +36,38 @@ Date:   Thu Sep 22 11:23:59 2022 +0900
 $ git add README.md 
 $ git commit -m "Feature branch"
 ```
+
+# 3. Merge branch
+```
+$ git checkout master
+Switched to branch 'master'
+
+$ git log
+commit 676ed2c42ffab236522a711444c2f1cdfa8d795f (HEAD -> master)
+Author: test <test@example.com>
+Date:   Thu Sep 22 11:23:59 2022 +0900
+
+    Initial release
+
+$ git merge feature
+Updating 676ed2c..e6657da
+Fast-forward
+ README.md | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+$ git log
+commit e6657da718e5b53eac1cd0a562b17bb69c876769 (HEAD -> master, feature)
+Author: test <test@example.com>
+Date:   Thu Sep 22 11:26:49 2022 +0900
+
+    Feature branch
+
+commit 676ed2c42ffab236522a711444c2f1cdfa8d795f
+Author: test <test@example.com>
+Date:   Thu Sep 22 11:23:59 2022 +0900
+
+    Initial release
+
+$ git add README.md
+$ git commit -m "Merge branch"
+```
