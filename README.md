@@ -99,3 +99,21 @@ Date:   Thu Sep 22 11:23:59 2022 +0900
 $ git add README.md
 $ git commit -m "Delete branch"
 ```
+
+# 5. Remote repository
+```
+$ git add README.md
+$ git commit -m "Remote repository"
+
+$ git remote add origin https://github.com/developer-onizuka/test
+
+$ git push -u origin master
+Username for 'https://github.com': developer-onizuka
+Password for 'https://developer-onizuka@github.com': Input Your Access Token here 
+
+... snip ...
+
+To https://github.com/developer-onizuka/test
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+```
