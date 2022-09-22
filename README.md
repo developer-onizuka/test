@@ -71,3 +71,31 @@ Date:   Thu Sep 22 11:23:59 2022 +0900
 $ git add README.md
 $ git commit -m "Merge branch"
 ```
+
+# 4. Delete branch
+```
+$ git branch -d feature
+Deleted branch feature (was e6657da).
+
+$ git log
+commit c3cb98013877e6d43747f1e200bd0e408f4fc7c6 (HEAD -> master)
+Author: test <test@example.com>
+Date:   Thu Sep 22 11:30:36 2022 +0900
+
+    Merge branch
+
+commit e6657da718e5b53eac1cd0a562b17bb69c876769
+Author: test <test@example.com>
+Date:   Thu Sep 22 11:26:49 2022 +0900
+
+    Feature branch
+
+commit 676ed2c42ffab236522a711444c2f1cdfa8d795f
+Author: test <test@example.com>
+Date:   Thu Sep 22 11:23:59 2022 +0900
+
+    Initial release
+
+$ git add README.md
+$ git commit -m "Delete branch"
+```
