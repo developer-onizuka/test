@@ -20,3 +20,19 @@ $ git add README.md
 $ git commit -m "Initial release"
 ```
 
+# 2. Feature branch
+```
+$ git branch feature
+$ git checkout feature
+Switched to branch 'feature'
+
+$ git log
+commit 676ed2c42ffab236522a711444c2f1cdfa8d795f (HEAD -> master, feature)
+Author: test <test@example.com>
+Date:   Thu Sep 22 11:23:59 2022 +0900
+
+    Initial release
+
+$ git add README.md 
+$ git commit -m "Feature branch"
+```
